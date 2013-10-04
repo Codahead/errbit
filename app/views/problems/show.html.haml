@@ -9,6 +9,8 @@
   %br
   %strong Environment:
   = problem.environment
+  %strong First Notice:
+  = problem.errs.first.created_at.to_s(:precise)
   %strong Last Notice:
   = problem.last_notice_at.to_s(:precise)
 - content_for :action_bar do
